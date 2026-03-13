@@ -12,7 +12,7 @@ This repository contains:
 
 ---
 
-## 🔧 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -37,11 +37,11 @@ ls -l /var/log/suricata
 cat /var/log/suricata/eve.json | jq -C '. | select(.event_type=="alert") | {alert:.alert.signature, src:.src_ip, dst:.dest_ip}' | less -R
 ```
 
-> ✅ Tip: `eve.json` is the most common output format for analysis and can be piped to `jq` for filtering.
+> Tip: `eve.json` is the most common output format for analysis and can be piped to `jq` for filtering.
 
 ---
 
-## 🧩 Custom Rule Example
+## Custom Rule Example
 
 The repository includes a sample custom rule in `rules/custom.rules`:
 
@@ -53,7 +53,7 @@ You can add additional rules into `rules/custom.rules` and rerun Suricata with `
 
 ---
 
-## 🧠 Notes / Investigation
+## Notes / Investigation
 
 This lab is intended for:
 
@@ -65,7 +65,7 @@ Feel free to add notes to `investigation-notes.md` and expand `docs/suricata-rul
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 The `screenshots/` directory contains example captures of the analysis process. Use them as visual references while working through the lab.
 
@@ -84,7 +84,7 @@ The `screenshots/` directory contains example captures of the analysis process. 
 
 ---
 
-## 🧰 Useful Commands
+## Useful Commands
 
 ```sh
 # Validate Suricata config
@@ -107,4 +107,4 @@ sudo tail -F /var/log/suricata/eve.json | jq -C '.'
 
 ---
 
-> 📌 Note: If you want to inspect the raw packet traffic interactively, open the `.pcap` files in Wireshark.
+> Note: If you want to inspect the raw packet traffic interactively, open the `.pcap` files in Wireshark.
