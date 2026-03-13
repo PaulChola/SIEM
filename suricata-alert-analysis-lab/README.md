@@ -69,26 +69,17 @@ Feel free to add notes to `investigation-notes.md` and expand `docs/suricata-rul
 
 The `screenshots/` directory contains example captures of the analysis process. Use them as visual references while working through the lab.
 
-### Included screenshots
-
-- **after suricata is run**
-  ![after suricata is run](screenshots/after%20suricata%20is%20run.png)
-- **cat custom rules**
-  ![cat custom rules](screenshots/cat%20custom%20rules.png)
-- **cat eve json**
-  ![cat eve json](screenshots/cat%20eve%20json.png)
-- **cat fast**
-  ![cat fast](screenshots/cat%20fast.png)
-- **jq  . eve with | less**
-  ![jq  . eve with | less](screenshots/jq%20.%20eve%20with%20%7C%20less.png)
-- **jq flow id eve json 225338295235828**
-  ![jq flow id eve json 225338295235828](screenshots/jq%20flow%20id%20eve%20json%20225338295235828.png)
-- **ls -var-log-suricata**
-  ![ls -var-log-suricata](screenshots/ls%20-var-log-suricata.png)
-- **severity 3**
-  ![severity 3](screenshots/severity%203.png)
-- **sudo suricata -r sample -S**
-  ![sudo suricata -r sample -S](screenshots/sudo%20suricata%20-r%20sample%20-S.png)
+| Step | Description | Screenshot |
+|------|-------------|------------|
+| 1 | Custom rules file content | ![cat custom rules](screenshots/cat%20custom%20rules.png) |
+| 2 | Running Suricata with custom rules | ![sudo suricata -r sample -S](screenshots/sudo%20suricata%20-r%20sample%20-S.png) |
+| 3 | Output after Suricata run | ![after suricata is run](screenshots/after%20suricata%20is%20run.png) |
+| 4 | Listing Suricata log directory | ![ls -var-log-suricata](screenshots/ls%20-var-log-suricata.png) |
+| 5 | Viewing eve.json log | ![cat eve json](screenshots/cat%20eve%20json.png) |
+| 6 | Viewing fast.log | ![cat fast](screenshots/cat%20fast.png) |
+| 7 | Filtering eve.json with jq | ![jq . eve with \| less](screenshots/jq%20.%20eve%20with%20%7C%20less.png) |
+| 8 | Filtering by severity 3 | ![severity 3](screenshots/severity%203.png) |
+| 9 | Specific jq query on eve.json | ![jq flow id eve json 225338295235828](screenshots/jq%20flow%20id%20eve%20json%20225338295235828.png) |
 
 
 ---
